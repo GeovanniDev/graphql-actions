@@ -28,10 +28,12 @@ jobs:
     - name: Build docker image
       run: |
         docker build -t geocarbajalmorales21/docker-graphql:0.0.1 .
+        docker build -t geocarbajalmorales21/docker-graphql .
 
     - name: Publish docker image
       run: |
         docker push geocarbajalmorales21/docker-graphql:0.0.1
+        docker push geocarbajalmorales21/docker-graphql
         
         
    # - name: Build the Docker image
